@@ -1,0 +1,87 @@
+mkdir lab0
+cd lab0
+mkdir exploud3 kricketune6 slowking5
+touch lampent7 pikachu9 togepi7
+chmod u+w kricketune6
+chmod u+w exploud3
+chmod u+w slowking5
+cd exploud3
+mkdir riolu ferrothorn
+echo "Живет  Forest" > swadloon
+echo "weight=49.8 height=71.0 atk=8" > gorebyss
+echo "def=11" >> gorebyss
+echo "Тип покемона  NORMAL NONE" > minccino
+cd ..
+cd kricketune6
+mkdir huntail
+mkdir darumaka
+echo "Тип покемона" > tirtouga
+echo "WATER ROCK" >> tirtouga
+echo "Возможности  Overland=8 Surface=6 Jump=1 Power=1" > ekans
+echo "Intelligence=3 Stealth=0" >> ekans
+echo "Тип поке�моарн�на  Ш�ICE" > vanillish
+echo "NONE" >> vanillish
+echo "satk=9 sdef=6 spd=8" > shiftry
+cd ..
+echo "Способности  Haunt Blaze" > lampent7
+echo "Flash Fire Flame Body" >> lampent7
+echo "�Разв�итые способности�" > pikachu9
+echo "Lightningrod" >> pikachu9
+cd slowking5
+mkdir umbreon sharpedo
+echo "Способности  Uproar Astonish Howl Bite" > loudred
+echo "Supersonic Stomp Screech Roar Synchronoise Rest Sleep Talk Hyper" >> loudred
+echo "Voice" >> loudred
+echo "Способности  Confusion Disable Miracle Eye Ally Switch" > alakazam
+echo "Psybeam Reflect Telekinesis Recover Psycho Cut Calm Mind Psychic" >> alakazam
+echo "Future Sight Trick" >> alakazam
+echo "Живет  Forest Grassland" > tepig
+echo "Mountain" >> tepig
+cd ..
+echo "Тип диеты  Herbivore" >togepi7
+chmod 751 exploud3
+cd exploud3
+chmod 060 swadloon
+chmod 375 riolu
+chmod 400 gorebyss
+chmod 404 minccino
+chmod 375 ferrothorn
+cd ..
+chmod 776 kricketune6
+cd kricketune6
+chmod 512 huntail
+chmod 400 tirtouga
+chmod 066 ekans
+chmod 006 vanillish
+chmod 357 darumaka
+chmod 404 shiftry
+cd ..
+chmod 404 lampent7
+chmod 046 pikachu9
+chmod 735 slowking5
+cd slowking5
+chmod 440 loudred
+chmod 440 alakazam
+chmod 664 tepig
+chmod 737 umbreon
+chmod 764 sharpedo
+cd ..
+chmod 006 togepi7
+chmod u-w kricketune6
+ln -s togepi7 exploud3/swadloontogepi
+chmod u+w kricketune6
+chmod u+r kricketune6/ekans
+cat kricketune6/ekans slowking5/loudred > togepi7_98
+ln -s exploud3 Copy66
+cd exploud3
+rm exploud3
+cd ..
+cp togepi7 exploud3/swadloontogepi
+chmod u+rw kricketune6/darumaka
+cp lampent7 kricketune6/darumaka/lampent7
+ln togepi7 kricketune6/ekanstogepi
+cp -R exploud3 kricketune6/darumaka
+chmod u-w kricketune6
+chmod u-r kricketune6/ekans
+chmod u-rw kricketune6/darumaka
+
