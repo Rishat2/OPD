@@ -1,20 +1,26 @@
 mkdir lab0
 cd lab0
 mkdir exploud3 kricketune6 slowking5
+cd exploud3
+mkdir riolu ferrothorn
+cd ..
+cd kricketune6
+mkdir huntail darumaka
+cd ..
+cd slowking5
+mkdir umbreon sharpedo
+cd ..
 touch lampent7 pikachu9 togepi7
 chmod u+w kricketune6
 chmod u+w exploud3
 chmod u+w slowking5
 cd exploud3
-mkdir riolu ferrothorn
 echo "Живет  Forest" > swadloon
 echo "weight=49.8 height=71.0 atk=8" > gorebyss
 echo "def=11" >> gorebyss
 echo "Тип покемона  NORMAL NONE" > minccino
 cd ..
 cd kricketune6
-mkdir huntail
-mkdir darumaka
 echo "Тип покемона" > tirtouga
 echo "WATER ROCK" >> tirtouga
 echo "Возможности  Overland=8 Surface=6 Jump=1 Power=1" > ekans
@@ -28,7 +34,6 @@ echo "Flash Fire Flame Body" >> lampent7
 echo "�Разв�итые способности�" > pikachu9
 echo "Lightningrod" >> pikachu9
 cd slowking5
-mkdir umbreon sharpedo
 echo "Способности  Uproar Astonish Howl Bite" > loudred
 echo "Supersonic Stomp Screech Roar Synchronoise Rest Sleep Talk Hyper" >> loudred
 echo "Voice" >> loudred
