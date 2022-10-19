@@ -25,7 +25,7 @@ echo "Тип покемона" > tirtouga
 echo "WATER ROCK" >> tirtouga
 echo "Возможности  Overland=8 Surface=6 Jump=1 Power=1" > ekans
 echo "Intelligence=3 Stealth=0" >> ekans
-echo "Тип поке�моарн�на  Ш�ICE" > vanillish
+echo "Тип покемона  ICE" > vanillish
 echo "NONE" >> vanillish
 echo "satk=9 sdef=6 spd=8" > shiftry
 cd ..
