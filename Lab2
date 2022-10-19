@@ -85,7 +85,13 @@ cp togepi7 exploud3/swadloontogepi
 chmod u+r kricketune6/darumaka
 cp lampent7 kricketune6/darumaka/lampent7
 ln togepi7 kricketune6/ekanstogepi
+cd exploud3
+chmod u+r riolu ferrothorn swadloon
+cd ..
 cp -R exploud3 kricketune6/darumaka
+cd exploud3
+chmod u-r riolu ferrothorn swadloon
+cd..
 chmod u-w kricketune6
 chmod u-r kricketune6/ekans
 chmod u-r kricketune6/darumaka
