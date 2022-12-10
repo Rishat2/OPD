@@ -1,3 +1,11 @@
+package Main.P.S;
+
+import Main.CB.F.Satellites;
+import Main.E.Equipments;
+import Main.E.F.Telescope;
+import Main.P.Person;
+
+
 import java.util.Objects;
 
 public class Scientist extends Person {
@@ -5,7 +13,7 @@ public class Scientist extends Person {
     private Theorist type;
     private Science area;
 
-    Scientist(String name, Science science) {
+    public Scientist(String name, Science science) {
         super(name);
         area = science;
     }
@@ -42,7 +50,7 @@ public class Scientist extends Person {
         }
         return false;
     }
-    public String addEquipment(Equipments  equipmen) {
+    public String addEquipment(Equipments equipmen) {
         String equipment=equipmen.getName();
         if (Content(equipment, equipments)==false) {
             if (this.equipments[49] ==null) {
@@ -71,7 +79,7 @@ public class Scientist extends Person {
         }
         return c;
     }
-    public void WatchTheSatellites(Telescope telescope,Satellites sattelites,int numcrater){
+    public void WatchTheSatellites(Telescope telescope, Satellites sattelites, int numcrater){
         Telescope t=telescope;
         Satellites s= sattelites;
         for (int i=0;i<1;i++) {
@@ -88,7 +96,7 @@ public class Scientist extends Person {
                 break;
             }
             if (numcrater > s.getNumberOfCraters()) {
-                System.out.println("У спутника " + s.name + " меньше кратеров");
+                System.out.println("У спутника " + s.getName() + " меньше кратеров");
                 break;
             }
             if (s.getSizeOfCrater(numcrater) == 0) {

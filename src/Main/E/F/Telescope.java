@@ -1,10 +1,22 @@
+package Main.E.F;
+
+
+
+import Main.E.Equipments;
+
 import java.util.Objects;
 
-public class Telescope extends Equipments{
+public class Telescope extends Equipments {
     private double OpticalPower;
-    Telescope(String name,double size,double OpticalPower){
+    public Telescope(String name, double size, double OpticalPower){
         super(size, name);
-        this.OpticalPower=OpticalPower;
+        if(OpticalPower<0){
+            System.out.println("Размер не может быть отрицательным");
+        }
+        else{
+            this.OpticalPower=OpticalPower;
+        }
+        //this.OpticalPower=OpticalPower;
     }
     public void setName(String name) {
         this.name=name;
@@ -17,13 +29,22 @@ public class Telescope extends Equipments{
 
 
     public void setSize(double size) {
-        this.size=size;
+
+        if(size<0){
+            System.out.println("Размер не может быть отрицательным");
+        }
+        else{
+            this.size=size;
+        }
     }
 
     public double getSize() {
         return size;
     }
     public String setOpticalPower(double OpticalPower){
+        if(OpticalPower<0){
+            return "Размер не может быть отрицательным";
+        }
         if(OpticalPower>this.OpticalPower){
             return "Оптическая сила успешно увеличена";
         }

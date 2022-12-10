@@ -1,4 +1,9 @@
-abstract class Person implements gsName {
+package Main.P;
+
+import Main.CB.F.Planets;
+import Main.I.gsName;
+
+public abstract class Person implements gsName {
     protected String name;
     private String planet;
     private String place;
@@ -6,24 +11,30 @@ abstract class Person implements gsName {
         name="nobody";
         place="nowhere";
     }
-    Person(String name) {
+    protected Person(String name) {
         this.name = name;
     }
-    protected void SettleDown(Object planet){
-        Planets p=(Planets) planet;
+    public void SettleDown(Planets planet){
+        Planets p= planet;
+        if(this.planet!=null){
+            System.out.println("Персонаж ужи живет на планете "+this.planet);
+        }
+        else {
+        p.setPopulation(p.getPopulation() + 1);
         this.planet=p.getName();
     }
-    protected void Come(City city){
+    }
+    public void Come(City city){
         place= String.valueOf(city);
         System.out.println("Персонаж прибыл в город "+place);
     }
     protected String getPlace(){
         return place;
     }
-    protected String getPlanet(){
+    public String getPlanet(){
         return planet;
     }
-    protected void Leave(City city){
+    public void Leave(City city){
         if (place==String.valueOf(city)) {
             place = "nowhere";
             System.out.println("Персонаж успешно покинул город "+String.valueOf(city));

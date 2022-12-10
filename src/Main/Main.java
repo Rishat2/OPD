@@ -1,12 +1,22 @@
+package Main;
+
+import Main.CB.F.Planets;
+import Main.CB.F.Satellites;
+import Main.E.F.Telescope;
+import Main.P.City;
+import Main.P.S.Science;
+import Main.P.S.Scientist;
+import Main.P.S.Theorist;
+
 public class Main {
     public static void main(String[] args) {
         Scientist scientist1=new Scientist("Knowitall", Science.GENERAL);
-        Scientist scientist2=new Scientist("Knowitall",Science.GENERAL);
+        Scientist scientist2=new Scientist("Knowitall", Science.GENERAL);
         scientist1.Come(City.FLORAL);
         scientist1.Leave(City.SOLAR);
         scientist1.Leave(City.FLORAL);
         scientist1.Come(City.SOLAR);
-        System.out.println(scientist1.setTheory(scientist1,Theorist.METEORITE));
+        System.out.println(scientist1.setTheory(scientist1, Theorist.METEORITE));
         System.out.println(scientist1.getTheorist());
         Planets planet1=new Planets("Earth",6400000,0,7000000);
         Planets planet2=new Planets("Earth",6400000, 0,7000000);
@@ -37,6 +47,7 @@ public class Main {
         System.out.println(planet1.toString());
         System.out.println(planet1.equals(planet2));
         System.out.println(planet1.equals(planet1));
+
     }
 
 }

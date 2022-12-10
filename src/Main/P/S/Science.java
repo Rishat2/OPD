@@ -1,3 +1,5 @@
+package Main.P.S;
+
 public enum Science {
     ASTRONOM, MATHEMATICIAN, CHEMIST, PHILOLOGIST, PHYSICIST, PHISOLOPHER, GENERAL;
 }

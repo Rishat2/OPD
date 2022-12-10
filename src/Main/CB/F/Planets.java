@@ -1,12 +1,22 @@
+package Main.CB.F;
+
+import Main.CB.CelestialBodies;
+
 import java.util.Objects;
 
-public class Planets extends CelestialBodies{
-    private int population;
+public class Planets extends CelestialBodies {
+    protected int population;
     private int id=0;
     private static int counter=1;
-    Planets(String name,double size,double DistanceToEarth,int population) {
+    public Planets(String name, double size, double DistanceToEarth, int population) {
         super(name, size, DistanceToEarth);
-        this.population=population;
+        if(population<0){
+            System.out.println("Популяция не может быть отрицательной");
+        }
+        else{
+            this.population=population;
+        }
+        //this.population=population;
         id=counter++;
     }
     public void setName(String name) {
@@ -16,16 +26,35 @@ public class Planets extends CelestialBodies{
     public String getName() {
         return name;
     }
+    public void setDistance(double DistanceToEarth) {
+        this.DistanceToEarth=DistanceToEarth;
+    }
+
+    public double getDistance() {
+        return DistanceToEarth;
+    }
 
     public void setSize(double size) {
-        this.size=size;
+
+        if(size<0){
+            System.out.println("Размер не может быть отрицательным");
+        }
+        else{
+            this.size=size;
+        }
     }
 
     public double getSize() {
         return size;
     }
     public void setPopulation(int population) {
-        this.population=population;
+
+        if(population<0){
+            System.out.println("Популяция не может быть отрицательной");
+        }
+        else{
+            this.population=population;
+        }
     }
 
     public int getPopulation() {
