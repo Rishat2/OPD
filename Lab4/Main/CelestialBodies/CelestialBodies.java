@@ -1,7 +1,7 @@
-package Main.CB;
+package Main.CelestialBodies;
 
-import Main.I.gsName;
-import Main.I.gsSize;
+import Main.Interface.gsName;
+import Main.Interface.gsSize;
 
 public abstract class CelestialBodies implements gsName, gsSize {
     public double DistanceToEarth=0;

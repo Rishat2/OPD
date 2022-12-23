@@ -1,4 +1,4 @@
-package Main.I;
+package Main.Interface;
 
 public interface gsName {
     void setName(String name);

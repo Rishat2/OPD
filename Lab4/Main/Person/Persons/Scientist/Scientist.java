@@ -1,14 +1,14 @@
-package Main.P.S;
+package Main.Person.Persons.Scientist;
 
-import Main.CB.F.Satellites;
-import Main.E.Equipments;
-import Main.E.F.Telescope;
-import Main.P.Person;
+import Main.CelestialBodies.Sattelites.Satellites;
+import Main.Equipment.Equipments;
+import Main.Equipment.Science.Telescope;
+import Main.Person.Person;
 
 
 import java.util.Objects;
 
-public class Scientist extends Person {
+public final class Scientist extends Person {
     private String[] equipments = new String[50];
     private Theorist type;
     private Science area;
@@ -52,7 +52,7 @@ public class Scientist extends Person {
     }
     public String addEquipment(Equipments equipmen) {
         String equipment=equipmen.getName();
-        if (Content(equipment, equipments)==false) {
+        if (!Content(equipment, equipments)) {
             if (this.equipments[49] ==null) {
                 for (int i = 0; i < 50; i++) {
                     if (equipments[i] == null) {
@@ -127,5 +127,18 @@ public class Scientist extends Person {
     public String toString(){
         return "Имя ученого: "+this.name+"\nРод занятий: "+this.area+"\nВера в теорию: "+this.getTheorist()+"\nСписок оборудования: "+this.getEquipments();
     }
-
+    public Object Writing(String name,int size,String Janr){
+        class Book{
+            private String name;
+            private int size;
+            private String Janr;
+            Book(String name,int size,String Janr){
+                this.name=name;
+                this.size=size;
+                this.Janr=Janr;
+            }
+        }
+        Book book=new Book(name,size,Janr);
+        return book;
+    }
 }

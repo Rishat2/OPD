@@ -1,7 +1,7 @@
-package Main.E;
+package Main.Equipment;
 
-import Main.I.gsName;
-import Main.I.gsSize;
+import Main.Interface.gsName;
+import Main.Interface.gsSize;
 
 public abstract class Equipments implements gsName, gsSize {
     protected String name;

@@ -1,12 +1,12 @@
-package Main.E.F;
+package Main.Equipment.Science;
 
 
 
-import Main.E.Equipments;
+import Main.Equipment.Equipments;
 
 import java.util.Objects;
 
-public class Telescope extends Equipments {
+public final class Telescope extends Equipments {
     private double OpticalPower;
     public Telescope(String name, double size, double OpticalPower){
         super(size, name);

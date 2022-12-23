@@ -1,10 +1,10 @@
-package Main.CB.F;
+package Main.CelestialBodies.Sattelites;
 
-import Main.CB.CelestialBodies;
+import Main.CelestialBodies.CelestialBodies;
 
 import java.util.Objects;
 
-public class Satellites extends CelestialBodies {
+public final class Satellites extends CelestialBodies {
     private double[] SizeOfCraters;
     private int NumberOfCraters;
     public double[] Random;
